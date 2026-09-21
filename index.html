@@ -16,10 +16,15 @@
         <nav class="navbar">
             <h1>Gerald Elegant</h1>
 
-            <ul>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -35,7 +40,7 @@
             and beautiful event planning.
         </p>
 
-        <a href="#services" class="button">Explore Our Services</a>
+        <a href="https://wa.me/2347066921937" class="button" target="_blank" rel="noopener noreferrer">Order Now</a>
     </section>
 
 
@@ -45,7 +50,43 @@
 
         <div class="service-grid">
 
+            <div class="event-planning-card">
+                <div class="event-main-header">
+                    <div>
+                        <h3>🎉 Event Planning</h3>
+                        <p>Complete event support from planning to execution.</p>
+                    </div>
+                    <button class="expand-btn" aria-expanded="false">
+                        <span>Show more</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                </div>
+
+                <div class="event-subservices hidden">
+                    <div class="mini-service-card">
+                        <img src="bouncer-1.jpg" alt="Professional bouncers for events">
+                        <h4>🛡️ Bouncers</h4>
+                    </div>
+
+                    <div class="mini-service-card">
+                        <img src="https://elorents.com/wp-content/uploads/2025/07/Pro-Ushers.jpeg" alt="Event ushers helping guests">
+                        <h4>🤝 Ushers</h4>
+                    </div>
+
+                    <div class="mini-service-card">
+                        <img src="https://cms.forbesafrica.com/wp-content/uploads/2025/07/GettyImages-1788244032.jpg" alt="DJ performing at a live event">
+                        <h4>🎧 DJ</h4>
+                    </div>
+
+                    <div class="mini-service-card">
+                        <img src="https://afropop.org/migrated-uploads/2017/01/SeunOlota_FPark-1024x678.jpg" alt="Live band performing at an event">
+                        <h4>🎶 Live Band</h4>
+                    </div>
+                </div>
+            </div>
+
             <div class="service-card">
+                <img src="https://pastryempire.com/wp-content/uploads/2021/06/09749DF6-626D-4E29-96F8-CFF6D76AD0FC.jpeg" alt="Decorated birthday cake">
                 <h3>🎂 Cakes</h3>
                 <p>
                     Beautiful and delicious cakes for birthdays,
@@ -54,6 +95,7 @@
             </div>
 
             <div class="service-card">
+                <img src="https://labakeblog.wordpress.com/wp-content/uploads/2025/01/3c101a961c80239c54d154326fb96498.jpg?w=736" alt="Small chops platter">
                 <h3>🥟 Small Chops</h3>
                 <p>
                     Tasty small chops prepared fresh for parties,
@@ -62,6 +104,7 @@
             </div>
 
             <div class="service-card">
+                <img src="https://pictures-nigeria.jijistatic.net/123053192_NjIwLTYyMC1hNTkyZjM3Yjdm.webp" alt="Cocktails served at an event">
                 <h3>🥤 Cocktails</h3>
                 <p>
                     Refreshing and beautifully prepared cocktails
@@ -70,26 +113,20 @@
             </div>
 
             <div class="service-card">
-                <h3>🎉 Event Planning</h3>
+                <img src="https://naphtalirentals.com/wp-content/uploads/2022/03/275591064_3096139080650849_3878248487949264840_n.jpg" alt="Elegant event decoration setup">
+                <h3>🎊 Event Decoration</h3>
                 <p>
-                    We help plan and organize memorable events
-                    from start to finish.
+                    Beautiful decoration themes and finishing touches
+                    to make every celebration elegant and memorable.
                 </p>
             </div>
 
             <div class="service-card">
-                <h3>💐 Event Decoration</h3>
-                <p>
-                    Elegant decorations designed to make your
-                    celebration look amazing.
-                </p>
-            </div>
-
-            <div class="service-card">
+                <img src="https://omastylebride.com/wp-content/uploads/2022/03/OmaStyle-Bride-MummyJsKitchen-Catering-Nigerian-wedding-food-menu-700x457.jpeg" alt="Event catering setup with food and service">
                 <h3>🍽️ Event Catering</h3>
                 <p>
-                    Quality food and refreshments for weddings,
-                    birthdays, parties and other occasions.
+                    Delicious menus, attentive service, and smooth food
+                    presentation for weddings, parties, and corporate events.
                 </p>
             </div>
 
@@ -110,17 +147,164 @@
     </section>
 
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Event Highlights</h2>
+
+        <div class="gallery-grid">
+            <img src="https://naphtalirentals.com/wp-content/uploads/2022/03/275591064_3096139080650849_3878248487949264840_n.jpg" alt="Event decoration setup">
+            <img src="https://omastylebride.com/wp-content/uploads/2022/03/OmaStyle-Bride-MummyJsKitchen-Catering-Nigerian-wedding-food-menu-700x457.jpeg" alt="Event catering food display">
+            <img src="https://afropop.org/migrated-uploads/2017/01/SeunOlota_FPark-1024x678.jpg" alt="Live band performance">
+            <img src="https://cms.forbesafrica.com/wp-content/uploads/2025/07/GettyImages-1788244032.jpg" alt="DJ at a party event">
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <section id="location" class="map-section">
+        <h2>Visit Our Location</h2>
+
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps?q=Orita%20Challenge%20Ibadan%20Shoderu%20Street%20No.%206&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Orita+Challenge+Ibadan+Shoderu+Street+No.+6" target="_blank" rel="noopener noreferrer">
+            Get Directions
+        </a>
+    </section>
+
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book Your Event</h2>
+
+        <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-row">
+                <input type="text" name="eventType" placeholder="Event Type" required>
+                <input type="date" name="date" required>
+            </div>
+
+            <textarea name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+
+            <button type="submit">Send on WhatsApp</button>
+        </form>
+    </section>
+
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-grid">
+            <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “The cake was beautiful and the taste was amazing.
+                    Our guests kept asking who made it. Gerald Elegant delivered beyond expectations.”
+                </p>
+                <h3>— Mr Ada, Birthday Client</h3>
+            </article>
+
+            <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “From catering to decoration, everything was perfectly arranged.
+                    The event felt classy and stress-free from start to finish.”
+                </p>
+                <h3>— Mrs Tobi, Wedding Client</h3>
+            </article>
+
+            <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    “Our ushers and DJ were professional, friendly and very organized.
+                    I would definitely recommend Gerald Elegant for any event.”
+                </p>
+                <h3>— Mrs Jennifer, Event Host</h3>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2>Our Event Highlights</h2>
+
+        <div class="gallery-grid">
+            <img src="https://naphtalirentals.com/wp-content/uploads/2022/03/275591064_3096139080650849_3878248487949264840_n.jpg" alt="Event decoration setup">
+            <img src="https://pastryempire.com/wp-content/uploads/2021/06/09749DF6-626D-4E29-96F8-CFF6D76AD0FC.jpeg" alt="Beautiful cake design">
+            <img src="https://afropop.org/migrated-uploads/2017/01/SeunOlota_FPark-1024x678.jpg" alt="Live band performance">
+            <img src="https://pictures-nigeria.jijistatic.net/123053192_NjIwLTYyMC1hNTkyZjM3Yjdm.webp" alt="Cocktail event setup">
+        </div>
+    </section>
+
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <h2>Find Us</h2>
+
+        <div class="location-wrap">
+            <div class="location-info">
+                <h3>Gerald Elegant Cakes & Events</h3>
+                <p>📍 Orita Challenge, Ibadan, Shoderu Street No. 6</p>
+                <p>📞 07066921937</p>
+                <a href="https://wa.me/2347066921937" target="_blank" rel="noopener noreferrer" class="contact-button">Book on WhatsApp</a>
+            </div>
+
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps?q=Orita%20Challenge%20Ibadan%20Shoderu%20Street%20No.%206&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
 
-        <p>📍 Ibadan, Shoderu Street No. 6</p>
+        <p>📍 Orita Challenge, Ibadan, Shoderu Street No. 6</p>
 
         <p>📞 07066921937</p>
+
+        <div class="business-hours">
+            <h3>Business Hours</h3>
+            <p><span>Every Day:</span> 9:00 AM - 9:00 PM</p>
+            <p><span>Sunday:</span> 10:00 AM - 7:00 PM</p>
+        </div>
 
         <a href="tel:07066921937" class="contact-button">
             Call Us
         </a>
+
+        <div class="social-links" aria-label="Social media links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook icon">
+                <span>Facebook</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram icon">
+                <span>Instagram</span>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok icon">
+                <span>TikTok</span>
+            </a>
+        </div>
     </section>
 
 
@@ -131,16 +315,21 @@
 
         <p>Cakes • Small Chops • Cocktails • Event Planning</p>
 
-        <p>📍 Ibadan, Shoderu Street No. 6</p>
+        <p>📍 Orita Challenge, Ibadan, Shoderu Street No. 6</p>
 
         <p>📞 07066921937</p>
 
         <p class="copyright">
-            &copy; 2026 Gerald Elegant Cakes & Events.
+            &copy; <span id="year"></span> Gerald Elegant Cakes & Events.
             All rights reserved.
         </p>
 
     </footer>
 
+    <a class="whatsapp-float" href="https://wa.me/2347066921937" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
